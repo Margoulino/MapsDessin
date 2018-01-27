@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="style-selector-control" class="map-control">
+    <input type="radio" name="show-hide" id="hide-poi" class="selector-control">
+    <label for="hide-poi">Cacher le fond de carte</label>
+    <input type="radio" name="show-hide" id="show-poi" class="selector-control" checked="checked">
+    <label for="show-poi">Afficher le fond de carte</label>
+    <p style="padding-left: 6px;">Clic gauche/droit sur une forme pour la rotation</p>
+  </div>
+  <div id="map"></div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=drawing"></script>
+  <script src="script.js"></script>
+</body>
+</html>
